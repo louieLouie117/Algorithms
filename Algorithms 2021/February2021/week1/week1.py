@@ -20,6 +20,7 @@ def aVeryBigSum(ar):
     return sum
 
 # Reversed Strings
+# for this solution two thing to recall is that you need to loop in revers and +=
 
 
 def solution(string):
