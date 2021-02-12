@@ -28,3 +28,20 @@ const aVeryBigSum = (ar) => {
 var bigNum = [1000000001, 1000000002, 1000000003, 1000000004, 1000000005]
 aVeryBigSum(bigNum);
 
+
+// Reversed String
+// for this solution two thing to recall is that you need to loop in revers and +=
+function solution(str){
+    var newWord = "";
+  
+    for(var i = str.length - 1; i >= 0; i--){
+      console.log(str[i]);
+      newWord += str[i]
+    
+    }
+    return newWord; 
+  
+}
+
+Test.assertEquals(solution('world'), 'dlrow')
+

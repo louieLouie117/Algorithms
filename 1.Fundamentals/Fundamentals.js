@@ -31,6 +31,8 @@ const familyObj ={
     title: "father",
 };
 
+console
+
 // Loops:----------------------------------------------
 
 for(var i = 0; i < ar.length; i++){

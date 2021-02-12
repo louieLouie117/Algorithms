@@ -18,3 +18,13 @@ def aVeryBigSum(ar):
     for i in range(len(ar)):
         sum = sum + ar[i]
     return sum
+
+# Reversed Strings
+
+
+def solution(string):
+    newWord = ""
+    for i in range(len(string) - 1, -1, -1):
+        newWord += string[i]
+        print(string[i])
+    return newWord

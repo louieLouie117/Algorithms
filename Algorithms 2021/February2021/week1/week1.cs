@@ -28,4 +28,25 @@ static long aVeryBigSum(long[] ar)
 
 }
 
-// Diagonal Difference
+// Reversed String
+// for this solution two thing to recall is that you need to loop in revers and +=
+public static class Kata
+{
+  public static string Solution(string str) 
+  {
+    
+    string newWord = "";
+    for (int i = str.Length -1 ; i >= 0 ; i--){
+      Console.WriteLine(str[i]);
+      newWord += str[i];
+
+    }
+    
+    return newWord;
+    
+    
+    throw new NotImplementedException("TODO: Kata.Solution(string) => string");
+    
+    
+  }
+}
