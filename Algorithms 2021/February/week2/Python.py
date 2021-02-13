@@ -29,3 +29,19 @@ def solution(string):
         newWord += string[i]
         print(string[i])
     return newWord
+
+
+# Saturday February 13------------------------------------------------
+
+# Shortest Word #
+def find_short(s):
+    wordArray = s.split(' ')  # split by space
+    shortestWord = float('inf')  # infinity
+
+    for i in range(len(wordArray)):
+        print(wordArray[i], ":", len(wordArray[i]))
+
+        if len(wordArray[i]) < shortestWord:
+            shortestWord = len(wordArray[i])
+
+    return shortestWord  # l: shortest word length

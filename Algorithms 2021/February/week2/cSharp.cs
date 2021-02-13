@@ -50,3 +50,33 @@ public static class Kata
     
   }
 }
+
+
+
+// Saturday February 13------------------------------------------------
+
+// Shortest Word //
+using System;
+
+public class Kata
+{
+  public static int FindShort(string s)
+  {
+    string[] wordArray = s.Split(' ');
+    int shortestWord = int.MaxValue;
+    
+    for(int i = 0; i < wordArray.Length; i++){
+      Console.WriteLine(wordArray[i] + ": " + wordArray[i].Length);
+      if(wordArray[i].Length < shortestWord){
+        shortestWord =  wordArray[i].Length;
+
+      }
+      
+    }
+    
+    return shortestWord;
+  }
+}
+
+
+
