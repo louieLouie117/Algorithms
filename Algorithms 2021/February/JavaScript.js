@@ -71,3 +71,30 @@ function findShort(s){
   return shortestWord;
   
 }
+
+// Detect Pangram-----------------
+
+var string = "The quick brown fox jumps over the lazy dog."
+function isPangram(string){
+  
+  string = string.toLowerCase(); 
+
+  let pangram = "abcdefghigklmnopqrstuvwxyz"
+  
+//   let word = string.split("");
+  
+  for(let i = 0; i < pangram.length; i++){
+      console.log(pangram[i])
+    if(string.indexOf(pangram.charAt(i)) === -1){
+    
+      console.log(string.indexOf(pangram.charAt(i)))
+      
+      return false
+    }
+    
+  }
+  
+  return true
+  
+
+}
